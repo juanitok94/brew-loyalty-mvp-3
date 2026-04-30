@@ -4,7 +4,7 @@ export const shopConfig = {
   logoPath: "/dynamite-logo.png",
   location: "Black Mountain, NC",
   phone: "(828) 357-8555",
-  rewardDescription: "Earn a free drink",
+  rewardDescription: "free drink",
   finePrint: "Beverages only. Card must be present at time of purchase.",
   stampsRequired: 10,
   colors: {
