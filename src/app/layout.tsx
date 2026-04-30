@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: shopConfig.name,
   },
+  openGraph: {
+    title: `${shopConfig.name} — Loyalty Card`,
+    description: `Your digital loyalty card for ${shopConfig.name}, ${shopConfig.location}`,
+    images: ["/dynamite-logo.png"],
+  },
 };
 
 export const viewport: Viewport = {
