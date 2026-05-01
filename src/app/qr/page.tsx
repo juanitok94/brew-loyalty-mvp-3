@@ -68,7 +68,7 @@ export default function QRPage() {
             <p className="text-base font-semibold" style={{ color: "var(--brown-dark)" }}>
               Scan to join our loyalty program
             </p>
-            <p className="text-sm" style={{ color: "var(--brown-light)" }}>
+            <p className="text-sm" style={{ color: "var(--brown-text-muted)" }}>
               Buy {STAMPS_REQUIRED} drinks, earn a {shopConfig.rewardDescription}
             </p>
             <p className="text-xs" style={{ color: "var(--stamp-empty)" }}>
@@ -85,7 +85,7 @@ export default function QRPage() {
           </button>
 
           {url && (
-            <p className="text-xs break-all print:block" style={{ color: "var(--brown-light)" }}>
+            <p className="text-xs break-all print:block" style={{ color: "var(--brown-text-muted)" }}>
               {url}
             </p>
           )}

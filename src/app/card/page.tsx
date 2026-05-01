@@ -22,7 +22,7 @@ function StampCircle({ filled, index }: { filled: boolean; index: number }) {
       }`}
       style={{
         background: filled ? "var(--stamp-filled)" : "var(--stamp-empty)",
-        color: filled ? "#fff" : "var(--brown-light)",
+        color: filled ? "#fff" : "var(--brown-text-muted)",
         animationDelay: `${index * 60}ms`,
       }}
     >
@@ -120,7 +120,7 @@ function CardContent() {
       <main className="flex-1 flex flex-col items-center px-6 py-8">
         {loading && (
           <div className="flex-1 flex items-center justify-center">
-            <p style={{ color: "var(--brown-light)" }}>Loading your card...</p>
+            <p style={{ color: "var(--brown-text-muted)" }}>Loading your card...</p>
           </div>
         )}
 
@@ -130,7 +130,7 @@ function CardContent() {
             <button
               onClick={() => router.push("/")}
               className="text-sm underline"
-              style={{ color: "var(--brown)" }}
+              style={{ color: "var(--brown-text)" }}
             >
               Go back
             </button>
@@ -176,7 +176,7 @@ function CardContent() {
                   <StampCircle key={i} filled={i < data.stamps} index={i} />
                 ))}
               </div>
-              <p className="text-center text-xs mt-4" style={{ color: "var(--brown-light)" }}>
+              <p className="text-center text-xs mt-4" style={{ color: "var(--brown-text-muted)" }}>
                 {data.stamps} / {TOTAL} stamps
               </p>
             </div>
@@ -187,10 +187,10 @@ function CardContent() {
                 className="flex-1 rounded-xl p-3 text-center"
                 style={{ background: "var(--cream)" }}
               >
-                <p className="text-xl font-semibold" style={{ color: "var(--brown)" }}>
+                <p className="text-xl font-semibold" style={{ color: "var(--brown-text)" }}>
                   {data.stamps}
                 </p>
-                <p className="text-xs" style={{ color: "var(--brown-light)" }}>
+                <p className="text-xs" style={{ color: "var(--brown-text-muted)" }}>
                   current stamps
                 </p>
               </div>
@@ -198,10 +198,10 @@ function CardContent() {
                 className="flex-1 rounded-xl p-3 text-center"
                 style={{ background: "var(--cream)" }}
               >
-                <p className="text-xl font-semibold" style={{ color: "var(--brown)" }}>
+                <p className="text-xl font-semibold" style={{ color: "var(--brown-text)" }}>
                   {data.redeemed}
                 </p>
-                <p className="text-xs" style={{ color: "var(--brown-light)" }}>
+                <p className="text-xs" style={{ color: "var(--brown-text-muted)" }}>
                   {shopConfig.rewardDescription}s earned
                 </p>
               </div>
@@ -214,7 +214,7 @@ function CardContent() {
             <button
               onClick={() => router.push("/")}
               className="w-full text-sm underline"
-              style={{ color: "var(--brown-light)" }}
+              style={{ color: "var(--brown-text-muted)" }}
             >
               ← Back
             </button>
@@ -250,7 +250,7 @@ export default function CardPage() {
             </h1>
           </header>
           <div className="flex-1 flex items-center justify-center">
-            <p style={{ color: "var(--brown-light)" }}>Loading...</p>
+            <p style={{ color: "var(--brown-text-muted)" }}>Loading...</p>
           </div>
         </div>
       }

@@ -52,6 +52,8 @@ export default function RootLayout({
         "--brown": shopConfig.colors.brandPrimary,
         "--brown-light": shopConfig.colors.brandLight,
         "--brown-dark": shopConfig.colors.brandDark,
+        "--brown-text": shopConfig.colors.brandText,
+        "--brown-text-muted": shopConfig.colors.brandTextMuted,
         "--cream": shopConfig.colors.cream,
         "--stamp-empty": shopConfig.colors.stampEmpty,
         "--stamp-filled": shopConfig.colors.stampFilled,

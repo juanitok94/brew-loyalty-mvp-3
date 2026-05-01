@@ -16,6 +16,8 @@ export const shopConfig = {
     brandPrimary: "#F5C400",
     brandLight: "#F7CE33",
     brandDark: "#000000",
+    brandText: "#4A2C0A",
+    brandTextMuted: "#7A5C3A",
     cream: "#FAF7F0",
     stampEmpty: "#E8E3D8",
     stampFilled: "#F5C400",

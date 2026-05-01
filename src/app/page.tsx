@@ -82,13 +82,13 @@ export default function HomePage() {
             className="rounded-2xl p-6 text-center space-y-1"
             style={{ background: "var(--cream)" }}
           >
-            <p className="text-sm font-medium" style={{ color: "var(--brown-light)" }}>
+            <p className="text-sm font-medium" style={{ color: "var(--brown-text-muted)" }}>
               Buy {STAMPS_REQUIRED} drinks
             </p>
-            <p className="text-2xl font-semibold" style={{ color: "var(--brown)" }}>
+            <p className="text-2xl font-semibold" style={{ color: "var(--brown-text)" }}>
               Earn a {shopConfig.rewardDescription}
             </p>
-            <p className="text-xs" style={{ color: "var(--brown-light)" }}>
+            <p className="text-xs" style={{ color: "var(--brown-text-muted)" }}>
               No app download needed
             </p>
           </div>
@@ -128,7 +128,7 @@ export default function HomePage() {
             >
               {loading ? "Loading..." : "See my card"}
             </button>
-            <p className="text-[14px] text-center mt-2" style={{ color: "var(--brown-light)" }}>
+            <p className="text-[14px] text-center mt-2" style={{ color: "var(--brown-text-muted)" }}>
               {shopConfig.finePrint}
             </p>
           </form>

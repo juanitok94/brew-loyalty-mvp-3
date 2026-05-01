@@ -57,7 +57,7 @@ export default function AdminLoginPage() {
           </p>
         </header>
         <main className="flex-1 flex items-center justify-center">
-          <p style={{ color: "var(--brown-light)" }}>Verifying access…</p>
+          <p style={{ color: "var(--brown-text-muted)" }}>Verifying access…</p>
         </main>
       </div>
     );

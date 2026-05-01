@@ -263,7 +263,7 @@ export default function AdminCustomerPage() {
             <button
               onClick={() => { sessionStorage.removeItem("adminToken"); router.push("/admin"); }}
               className="text-sm"
-              style={{ color: "var(--brown-light)" }}
+              style={{ color: "var(--brown-text-muted)" }}
             >
               ← Logout
             </button>
@@ -318,7 +318,7 @@ export default function AdminCustomerPage() {
               className="rounded-2xl p-4 space-y-2"
               style={{ background: "#fff", border: "1.5px solid var(--stamp-empty)" }}
             >
-              <p className="text-sm font-medium" style={{ color: "var(--brown-light)" }}>
+              <p className="text-sm font-medium" style={{ color: "var(--brown-text-muted)" }}>
                 Multiple matches — tap the right customer:
               </p>
               {collisions.map((c) => {
@@ -354,7 +354,7 @@ export default function AdminCustomerPage() {
                 <p className="text-base font-semibold" style={{ color: "var(--brown-dark)" }}>
                   {displayPhone}
                 </p>
-                <p className="text-sm" style={{ color: "var(--brown-light)" }}>
+                <p className="text-sm" style={{ color: "var(--brown-text-muted)" }}>
                   Last visit: {customer.lastVisit} · {customer.redeemed} {shopConfig.rewardDescription}s earned
                 </p>
               </div>
@@ -378,14 +378,14 @@ export default function AdminCustomerPage() {
                       className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-base mx-auto"
                       style={{
                         background: i < customer.stamps ? "var(--stamp-filled)" : "var(--stamp-empty)",
-                        color: i < customer.stamps ? "#fff" : "var(--brown-light)",
+                        color: i < customer.stamps ? "#fff" : "var(--brown-text-muted)",
                       }}
                     >
                       {i < customer.stamps ? "☕" : ""}
                     </div>
                   ))}
                 </div>
-                <p className="text-xs text-center mt-2" style={{ color: "var(--brown-light)" }}>
+                <p className="text-xs text-center mt-2" style={{ color: "var(--brown-text-muted)" }}>
                   {customer.stamps} / {TOTAL} stamps
                 </p>
               </div>
@@ -430,7 +430,7 @@ export default function AdminCustomerPage() {
               type="button"
               onClick={() => setShowFullInput((v) => !v)}
               className="text-xs underline w-full text-center"
-              style={{ color: "var(--brown-light)" }}
+              style={{ color: "var(--brown-text-muted)" }}
             >
               {showFullInput ? "✕ Cancel" : "Use full number instead"}
             </button>
